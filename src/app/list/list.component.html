@@ -1,0 +1,4 @@
+<ol>
+  <li *ngFor="let l of list$ | async ">Name - {{ l.name }}</li>
+</ol>
+<button (click)="addListItem()">Add</button>
