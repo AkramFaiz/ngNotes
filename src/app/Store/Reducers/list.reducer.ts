@@ -15,6 +15,6 @@ const initialState: ReadonlyArray<User> = [];
 
 export const listReducer = createReducer(
   initialState,
-  on(getListSuccess, (state) => [...lists] ),
-  on(addListSuccess, (state, name) => [...state, name])
+  on(getList, (state) => [...lists] ),
+  on(addList, (state, name) => [...state, name])
 );

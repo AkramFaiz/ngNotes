@@ -9,16 +9,16 @@ import { List, User } from "../Reducers/list.reducer";
 @Injectable()
 export class listEffects {
   constructor(private actions$: Actions, private store: Store<List>) {}
-  loadList$ = createEffect(() =>
-    this.actions$.pipe(
-      ofType(getList),
-      exhaustMap(() =>
-        from([...lists]).pipe(
-          map((list) => {
-            console.log(list)
-          })
-        )
-      )
-  );
+//   loadList$ = createEffect(() =>
+//     this.actions$.pipe(
+//       ofType(getList),
+//       exhaustMap(() =>
+//         from([...lists]).pipe(
+//           map((list) => {
+//             console.log(list)
+//           })
+//         )
+//       )
+//   );
   //getListSuccess(list)
 }
