@@ -1,0 +1,2 @@
+# ngNotes
+all of ng
